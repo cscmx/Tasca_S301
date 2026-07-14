@@ -1,6 +1,6 @@
 <?php
 
-enum PRIZE : string
+enum Prize : string
 {
     case GOLD = 'gold';
     case SILVER = 'silver';
