@@ -15,8 +15,8 @@ $olympics = new OlympicGames(
     ],
 
     $resultsData = [
-        new Result($athletesData[0], $eventsData[0], PRIZE::GOLD),
-        new Result($athletesData[1], $eventsData[1], PRIZE::GOLD)
+        new Result($athletesData[0], $eventsData[0], Prize::GOLD),
+        new Result($athletesData[1], $eventsData[1], Prize::GOLD)
     ]
 
 );

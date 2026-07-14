@@ -6,9 +6,9 @@ class Result
 {
     private Athlete $athlete;
     private Event $event;
-    private PRIZE $prize;
+    private Prize $prize;
 
-    public function __construct (Athlete $athlete, Event $event, PRIZE $prize)
+    public function __construct (Athlete $athlete, Event $event, Prize $prize)
     {
         $this->athlete = $athlete;
         $this->event = $event;
@@ -33,11 +33,11 @@ class Result
         $this->event = $event;
     }
 
-    public function getPrize(): PRIZE
+    public function getPrize(): Prize
     {
         return $this->prize;
     }
-    public function setPrize(PRIZE $prize)
+    public function setPrize(Prize $prize)
     { 
         $this->prize = $prize;
     }
