@@ -1,9 +1,14 @@
 <?php
 
-class PayPalPaymentGateway
+require_once 'S301_ejercicio2_nivel1/InterfacePaymentMethod.php';
+
+class PayPalPaymentGateway implements PaymentMethod
 {
+    
     public function sendPayment(float $amount): string
     {
-        return "{$amount} payment processed by Paypal";
+        return "Sent {$amount}€ payment processed by Paypal.";
     }
 }
+
+?>

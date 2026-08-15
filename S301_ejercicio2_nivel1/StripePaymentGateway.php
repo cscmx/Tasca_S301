@@ -1,9 +1,11 @@
 <?php 
 
-class StripePaymentGateway
+require_once 'S301_ejercicio2_nivel1/InterfacePaymentMethod.php';
+
+class StripePaymentGateway implements PaymentMethod
 {
     public function sendPayment(float $amount): string
     {
-        return "{$amount} payment processed with Stripe";
+        return "Sent {$amount}€ payment processed with Stripe.";
     }
 }

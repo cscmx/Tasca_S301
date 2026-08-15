@@ -1,9 +1,12 @@
 <?php 
 
-class BankTransfer
+require_once 'S301_ejercicio2_nivel1/InterfacePaymentMethod.php';
+
+class BankTransfer implements PaymentMethod
 {
-    public function sendTransfer(float $amount): string
+
+    public function sendPayment(float $amount): string
     {
-        return "{$amount} bank transfer done";
+        return "Sent {$amount}€ payment via Bank Transfer.";
     }
 }
