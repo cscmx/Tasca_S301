@@ -1,6 +1,6 @@
 <?php
 
-interface ElectricHeaterActions
+interface CanHeat
 {
     public function heat(): void;
 

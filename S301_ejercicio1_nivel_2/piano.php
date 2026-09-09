@@ -1,8 +1,8 @@
 <?php
 
-require_once 'S301_ejercicio1_nivel_2/playInstrument.php';
+require_once 'S301_ejercicio1_nivel_2/CanPlay.php';
 
-class Piano implements PlayInstrument
+class Piano implements CanPlay
 {
     public function play()
     {

@@ -1,11 +1,9 @@
 <?php
-require_once 'S301_ejercicio2_nivel_2/classes/AcMachineActions.php';
-require_once 'S301_ejercicio2_nivel_2/classes/traitSwitch.php';
+require_once 'S301_ejercicio2_nivel_2/classes/CanCool.php';
+require_once 'S301_ejercicio2_nivel_2/classes/SwitchingOnOff.php';
 
-class AcMachine implements AcMachineActions
+class AcMachine implements SwitchingOnOff,CanCool
 {
-    use turnOnOff;
-
     public function turnOn(): void
     {
         echo "A/C machine on\n";

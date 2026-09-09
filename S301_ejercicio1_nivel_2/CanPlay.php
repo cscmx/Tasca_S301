@@ -1,6 +1,6 @@
 <?php 
 
-interface PlayInstrument
+interface CanPlay
 {
     public function play();
 }

@@ -1,12 +1,10 @@
 <?php
 
-require_once 'S301_ejercicio2_nivel_2/classes/ElectricHeaterActions.php';
-require_once 'S301_ejercicio2_nivel_2/classes/traitSwitch.php';
+require_once 'S301_ejercicio2_nivel_2/classes/CanHeat.php';
+require_once 'S301_ejercicio2_nivel_2/classes/SwitchingOnOff.php';
 
-class ElectricHeater implements ElectricHeaterActions
+class ElectricHeater implements SwitchingOnOff, CanHeat
 {
-    use turnOnOff;
-
     public function turnOn(): void
     {
         echo "Heater on\n";

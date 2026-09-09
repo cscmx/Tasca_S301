@@ -1,6 +1,6 @@
 <?php
 
-interface WashingMachineActions
+interface CanWash
 {
     public function wash(): void;
 }

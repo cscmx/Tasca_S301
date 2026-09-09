@@ -1,11 +1,11 @@
 <?php
 
-require_once 'S301_ejercicio2_nivel_2/classes/WashingMachineActions.php';
-require_once 'S301_ejercicio2_nivel_2/classes/traitSwitch.php';
+require_once 'S301_ejercicio2_nivel_2/classes/CanWash.php';
+require_once 'S301_ejercicio2_nivel_2/classes/SwitchingOnOff.php';
 
-class WashingMachine implements WashingMachineActions
+
+class WashingMachine implements CanWash, SwitchingOnOff
 {
-    use turnOnOff;
 
     public function turnOn(): void
     {

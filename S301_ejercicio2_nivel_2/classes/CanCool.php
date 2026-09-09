@@ -1,6 +1,6 @@
 <?php
 
-interface AcMachineActions
+interface CanCool
 {
     public function cool(): void;
 }

@@ -1,6 +1,6 @@
 <?php 
 
-interface SwitchOnOff
+interface SwitchingOnOff
 {
     public function turnOn();
     public function turnOff();
